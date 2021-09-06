@@ -22,7 +22,7 @@ Julia Hop
 Blauw
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+Responsive
  
 </details>
 
@@ -36,15 +36,15 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://www.knvb.nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Homepagina
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Vind een club
+<img src="images/vind-een-club.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -58,7 +58,7 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/homepagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
