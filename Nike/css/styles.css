@@ -1,0 +1,31 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+
+/******************************/
+/* ALGEMENE CUSTOM PROPERTIES */
+/******************************/
+:root {
+    --main-color:#000000;
+    --background-color:#ffffff;
+  
+    --white-space:5vw;
+}
+
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+body{
+    margin:0;
+    padding:var(--white-space);
+    background-color:var(--background-color);
+    font-family:'Helvetica Neue';
+    color:var(--main-color);
+}
+
+/* titel */
+
+/************/
+/* DE ITEMS */
+/************/
+
