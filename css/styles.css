@@ -359,16 +359,10 @@ main {
 }
 
 .productenHardloopschoenen ul {
+    display: flex;
+    list-style: none;
     padding: 0;
     gap: 1em;
-}
-
-.productenHardloopschoenen .container1 {
-    flex-direction: row;
-}
-
-.productenHardloopschoenen .container2 {
-    flex-direction: row;
 }
 
 .productenHardloopschoenen li {
