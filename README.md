@@ -43,7 +43,7 @@ Homepagina
 <img src="images/homepagina.png" width="375px" alt="de homepagina van Nike">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Vind een club
+Shoppagina
 <img src="images/shop.png" width="375px" alt="de shoppagina van Nike">
  
 </details>
@@ -58,7 +58,7 @@ Vind een club
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/Breakdown-schets.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdownSchets.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/menu.png" width="375px" alt="breakdown van een dynamisch deel">
@@ -120,8 +120,10 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+<img src="images/voortgang2.png" alt="screenshot van voortgang 2">
+Lastig: Tijdens voortgang 2 ging ik vragen hoe ik de volle breedte kreeg bij het grijze vak en hoe die tekst goed in het midden kwam, want daar kwam ik zelf niet uit.
 
+Goed: Voor de rest ging alles nog goed en moest ik zelf verder gaan met coderen.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -131,15 +133,12 @@ samen met je groepje opstellen
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
-
+Dit hadden we niet gedaan.
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Gebruik geen height, maar padding
 
 </details>
 
@@ -154,30 +153,44 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
+- Onder het kopje ‘gear up’ zijn de producten niet klikbaar.
+- Op de Nike site zijn alle plaatjes klikbaar en bij mij nog niet allemaal.
+- Ik heb nog geen hover state bij mijn buttons.
+- Grotere lettertypes en een goed contrast helpen bij diverse beperkingen.
+- Bij alle svg-afbeeldingen zei de screenreader dat het een ongelabelde afbeelding was.
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Onklikbare plaatjes deel 1
+Onder het kopje ‘gear up’ waren de producten niet klikbaar.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Maar toen ik keek in mijn html bleek dat ik geen href=’#’ in mijn code had gezet bij section 3.
 
+#### Onklikbare plaatjes deel 2 
+Ook kwam ik erachter dat op de Nike site alle plaatjes klikbaar zijn, maar bij mijn site nog niet alle.
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Dus dat heb ik aangepast met <a href=’#’>.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Geen hover state 
+Ook had ik nog geen hover op mijn buttons.
 
+Dus dat heb ik even toegepast tijdens de les.
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Grotendeels beperking vriendelijk 
+Kleurenblind: ✓
+Low contest: X ‘Looks die je laten opvallen’ is slecht leesbaar - oplossing = beter contrast
+Suikerziekte: ✓
+Middenzichtverlies: X - oplossing = groter lettertype
+Halfveldverlies: ✓
+Perifere veldverlies: ✓
+Vervagen: X - oplossing = groter lettertype
+Spasmen/parkinson: ✓ Buttons zijn goed klikbaar
+Afleiding: ✓
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Grotere lettertypes en een goed contrast helpen bij diverse beperkingen.
 
+#### Ongelabelde afbeeldingen 
+Bij alle svg-afbeeldingen zei de screenreader dat het een ongelabelde afbeelding was.
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
+Na wat gesurft te hebben op het internet kwam ik erachter dat je met titel=“ ”; ervoor kon zorgen dat de afbeelding gelabeld werd.
 </details>
 
 
@@ -190,8 +203,9 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Goed: Ik heb bijna helemaal mijn eerste pagina af. 
 
+Lastig: Paar puntjes moeten nog op de i gezet worden.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -201,15 +215,13 @@ samen met je groepje opstellen
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
-
+Dit hebben we niet gedaan.
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Om te kunnen sliden door de producten moet je in de ul scroll-snap-type: x mandatory; doen en in de li scroll-snap-align: center;
+- Om a tags van elkaar te kunnen onderscheiden moet je not(:first-of-type) neerzetten.
 
 </details>
 
@@ -240,10 +252,9 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. Studentassistenten Rowin Schmidt & Younes Emre Alkan
+3. Docent Sanne 't Hooft
+4. Huiswerkopdrachten (codepen)
 
 </details>
