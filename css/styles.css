@@ -5,24 +5,25 @@
 /******************************/
 /* ALGEMENE CUSTOM PROPERTIES */
 /******************************/
+
 :root {
     --main-color:#000000;
     --background-color:#ffffff;
     --secondary-color: #f5f5f5;
     --special-color: #a47a6a;
-  
     --white-space:5vw;
 }
 
 /********************/
 /* ALGEMENE STIJLEN */
 /********************/
+
 body{
+    background-color:var(--background-color);
+    color:var(--main-color);
+    font-family:'Helvetica Neue';
     margin:0;
     padding: 0;
-    background-color:var(--background-color);
-    font-family:'Helvetica Neue';
-    color:var(--main-color);
 }
 
 /********/
@@ -31,13 +32,13 @@ body{
 
 header nav {
     background: var(--background-color);
+    height: 100vh;
     position: fixed;
     right: 0;
-    top: 0;
-    width: 85%;
-    height: 100vh;
     transform: translateX(100%);
     transition: .3s;
+    top: 0;
+    width: 85%;
     z-index: 1000;
 }
 
@@ -46,34 +47,38 @@ header.menuOpen nav{
 }
 
 header div {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    visibility: hidden;
     backdrop-filter: blur(5px);
+    bottom: 0;
+    left: 0;
     opacity: 0;
+    position: fixed;
+    right: 0;
     transition: .3s;
+    top: 0;
+    visibility: hidden;
     z-index: 999;
 }
 
 header.menuOpen div {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
 }
 
 header nav ul {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    align-items: flex-start;
 }
 
 header nav li {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 1.5em 1em 0;
+    padding: 0;
+    width: 90%;
 }
 
 header button {
@@ -82,15 +87,17 @@ header button {
 }
 
 header nav a {
-    font-size: 24px;
-    text-decoration: none;
     color: var(--main-color);
+    font-size: 24px;
     font-weight: 400;
+    text-decoration: none;
+    padding: 0;
 }
 
 /*************/
 /* DE HEADER */
 /*************/
+
 .logo {
     display: flex;
     flex: 1;
@@ -174,6 +181,7 @@ main {
 /***********/
 /* GEAR UP */
 /***********/
+
 .gearUp ul {
     list-style-type: none;
     padding: 0;
@@ -236,6 +244,7 @@ main {
     flex-direction: column;
     text-decoration: none;
 }
+
 /*********/
 /* NIEUW */
 /*********/
@@ -344,6 +353,8 @@ main {
 }
 
 .productenHardloopschoenen a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
 }
 
@@ -353,12 +364,10 @@ main {
 }
 
 .productenHardloopschoenen .container1 {
-    display: flex;
     flex-direction: row;
 }
 
 .productenHardloopschoenen .container2 {
-    display: flex;
     flex-direction: row;
 }
 

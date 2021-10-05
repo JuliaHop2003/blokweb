@@ -78,8 +78,6 @@ Shoppagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 Lastig:
 <img src="images/svg.jpeg" width="375px" alt="breakdown van nog een dynamisch deel">
 Eerst wist ik niet hoe je svg-bestanden in Visual Code moest zetten, dus toen had ik de icons nagemaakt en als png-bestanden erin gezet. Maar in de werkgroep liet Sanne mij zien dat het helemaal niet lastig is, dus nu gebruik ik de officiële svg-bestanden van Nike.
@@ -133,12 +131,14 @@ samen met je groepje opstellen
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
+
 Dit hadden we niet gedaan.
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Gebruik geen height, maar padding
+- Ga verder met je code
 
 </details>
 
@@ -167,7 +167,7 @@ Maar toen ik keek in mijn html bleek dat ik geen href=’#’ in mijn code had g
 #### Onklikbare plaatjes deel 2 
 Ook kwam ik erachter dat op de Nike site alle plaatjes klikbaar zijn, maar bij mijn site nog niet alle.
 
-Dus dat heb ik aangepast met <a href=’#’>.
+Dus dat heb ik aangepast met href.
 
 #### Geen hover state 
 Ook had ik nog geen hover op mijn buttons.
@@ -215,6 +215,7 @@ samen met je groepje opstellen
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
+
 Dit hebben we niet gedaan.
 
 ### Verslag van meeting
@@ -235,11 +236,21 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Goed: Ik vind dat mijn versie van de Nike website er heel erg goed op lijkt en er netjes/clean uitziet, dus ik ben erg tevreden en trots op het eindresultaat. Ook vind ik dat ik super veel heb geleerd tijdens dit vak. Ik begon met een laag niveau, want ik had vorig schooljaar een 5,5 voor internetstandaarden en een 5 voor programmeren. De opdrachten op codepen vond ik erg duidelijk uitgelegd en daardoor snapte ik wat ik moest doen en ze paste goed aan bij de eindopdracht. Ook heb ik super veel gehad aan de hulp van de studentassistenten, want ik liep best vaak tegen wat dingetjes aan en door te kijken hoe hun dat oplossen heb ik veel geleerd.
+Heel misschien verwacht ik dat bij het eindgesprek wordt gezegd dat ik iets meer had moeten doen voor de surface, maar hier heb ik geen tijd meer voor en dit is het meeste code wat ik ooit heb geschreven :D
+
+Lastig: Ik vond het lastig om individueel een uitshuifbaar menu te maken, dus dat heb ik samen met Rowin tijdens een call gedaan. Het eindresultaat zie je hieronder bij de screenshots.
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+Homepagina
+<img src="images/eindresultaatHomepagina.png" width="375px" alt="screenshot van homepagina">
+
+Menu
+<img src="images/eindresultaatMenu.png" width="375px" alt="screenshot van menu">
+
+Shoppagina
+<img src="images/eindresultaatShoppagina.png" width="375px" alt="screenshot van shoppagina">
 
 </details>
 
@@ -250,7 +261,6 @@ hier screenshot(s) van je eindresultaat
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 2. Studentassistenten Rowin Schmidt & Younes Emre Alkan
