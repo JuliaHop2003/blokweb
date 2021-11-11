@@ -258,6 +258,63 @@ Shoppagina
 
 
 
+## Herkansing
+
+<details>
+
+### Stand van zaken
+
+Uit het eindgesprek kwam dat ik de volgende dingen moest verbeteren:
+- Plaatje moet meeschalen van 320 px tot 540 px
+- Alle sections moeten een titel krijgen (aria label) op regel 90
+- Regel 78 moet een linkje (a) worden
+- Weg trail atletiekbaan lijstje met label op regel 83
+- Namen met betekenis, dus geen row en column
+- p weg en een normaal woord neerzetten op regel 163
+- svg in p tag op regel 199
+- Alle kleuren bovenaan zetten
+- 5 surface dingen
+
+Mijn 5 (eigenlijk 6) surface planes:
+1. Dark/light mode
+2. SVG stylen en animeren
+3. DOM manipulatie
+4. Advanced positioning
+5. Custom properties++
+6. Animaties
+
+### Screenshot(s)
+Homepagina light mode
+<img src="images/eindresultaatHomepaginaHerkansing.png" width="375px" alt="screenshot van homepagina in lightmode">
+
+Homepagina dark mode
+<img src="images/eindresultaatHomepaginaHerkansingDarkMode.png" width="375px" alt="screenshot van homepagina in darkmode">
+
+Menu light mode
+<img src="images/eindresultaatMenuHerkansing.png" width="375px" alt="screenshot van menu in lightmode">
+
+Menu darkmode mode
+<img src="images/eindresultaatMenuHerkansingDarkMode.png" width="375px" alt="screenshot van menu in darkmode">
+
+Shoppagina lightmode
+<img src="images/eindresultaatShoppaginaHerkansing.png" width="375px" alt="screenshot van shoppagina in ligtmode">
+
+Shoppagina darkmode
+<img src="images/eindresultaatShoppaginaHerkansingDarkMode.png" width="375px" alt="screenshot van shoppagina in darkmode">
+
+De vormgeving is bijna hetzelfde als eerst. 
+
+De verbeteringen zijn:
+- Responsive maken van 320 tot 540 px
+- Html fixen
+- 5 punten uit de surface lijst
+
+</details>
+
+
+
+
+
 ## Bronnenlijst
 
 <details open>

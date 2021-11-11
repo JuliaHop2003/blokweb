@@ -8,19 +8,39 @@
 
 :root {
     --main-color:#000000;
-    --background-color:#ffffff;
-    --secondary-color: #f5f5f5;
-    --special-color: #a47a6a;
+    --secondary-color: #a47a6a;
+    --third-color: grey;
+    --fourth-color: #FA5400;
+    --fifth-color: #f5f5f5;
+    --background-color: #ffffff;
+    --footer-color: #111111;
+
+    --main-hover-color: rgba(0, 0, 0, 0.8);
+    --secondary-hover-color: rgba(0, 0, 0, 0.3);
+    --third-hover-color: rgba(255, 255, 255, 0.8);
+    
     --white-space:5vw;
+}
+
+@media (prefers-color-scheme:dark) {
+    :root {
+    --main-color: #ffffff;
+    --fifth-color: #2a2a2a;
+    --background-color: #000000;
+    --footer-color: #c8c8c8;
+
+    --main-hover-color: rgba(255, 255, 255, 0.8);
+    --third-hover-color: rgba(0, 0, 0, 0.8);
+    }
 }
 
 /********************/
 /* ALGEMENE STIJLEN */
 /********************/
 
-body{
-    background-color:var(--background-color);
-    color:var(--main-color);
+body {
+    background-color: var(--background-color);
+    color: var(--main-color);
     font-family:'Helvetica Neue';
     margin:0;
     padding: 0;
@@ -47,7 +67,7 @@ header.menuOpen nav{
 }
 
 header div {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--secondary-hover-color);
     backdrop-filter: blur(5px);
     bottom: 0;
     left: 0;
@@ -126,12 +146,40 @@ header ul {
     width: 100%;
 }
 
+header ul li:last-of-type svg {
+    height: 20px;
+    width: auto;
+}
+
+header ul li:last-of-type svg line {
+    transition: 0.25s;
+    fill: var(--main-color);
+}
+
+header ul li:last-of-type svg:hover line:first-of-type,
+header ul li:last-of-type svg:focus line:first-of-type {
+    transform: translateY(3px);
+}
+
+header ul li:last-of-type svg:hover line:last-of-type,
+header ul li:last-of-type svg:focus line:last-of-type {
+    transform: translateY(-3px);
+}
+
+header ul li:last-of-type svg line {
+    stroke: var(--main-color);
+}
+
+header svg {
+    fill: var(--main-color);
+}
+
 /*******************/
 /* NOTIFICATIE BAR */
 /*******************/
 
 header section p {
-    background-color: var(--secondary-color);
+    background-color: var(--fifth-color);
     font-size: 12px;
     margin: 0;
     padding: 1.5em var(--white-space);
@@ -147,6 +195,7 @@ main {
 /******************/
 
 .findYourFast h1 {
+    color: var(--main-color);
     font-family: 'Futura-CondensedExtraBold';
     font-size: 48px;
     line-height: 1;
@@ -175,7 +224,11 @@ main {
 }
 
 .findYourFast a:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--main-hover-color);
+}
+
+.findYourFast img {
+    width: 100%;
 }
 
 /***********/
@@ -193,7 +246,7 @@ main {
 }
 
 .gearUp h3 {
-    color: var(--special-color);
+    color: var(--secondary-color);
     font-size: 1em;
     font-weight: 500;
     margin: 1em 0 0;
@@ -209,7 +262,7 @@ main {
 }
 
 .gearUp h5 {
-    color: grey;
+    color: var(--third-color);
     font-size: 1em;
     font-weight: normal;
     margin: 0.5em 0 0;
@@ -268,7 +321,7 @@ main {
 }
 
 .nieuw a:not(:first-of-type):hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--third-hover-color);
 }
 
 .nieuw ul {
@@ -278,7 +331,7 @@ main {
 
 .nieuw p {
     bottom: 4em;
-    color: white;
+    color: white;   /* Ik heb hier express geen custom propertie, vanwege de darkmode. In beide modus moet de tekst namelijk wit blijven */
     padding: 1em 1.5em 1.5em;
     position: absolute;
 }
@@ -320,13 +373,17 @@ main {
 /* SHOP HARDLOOPSCHOENEN */
 /*************************/
 
-.shopHardloopschoenen p:first-of-type {
+.shopHardloopschoenen a {
+    color:var(--main-color);
     font-size: 14px;
     font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1em;
 }
 
 .shopHardloopschoenen p:last-of-type {
-    color: grey;
+    color: var(--third-color);
     font-size: 16px;
     padding: 1em 0 1em;
 }
@@ -336,15 +393,13 @@ main {
 }
 
 .shopHardloopschoenen ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
     padding: 0;
 }
 
 .shopHardloopschoenen li {
-    display: flex;
-    flex-direction: row;
-}
-
-.shopHardloopschoenen h2 {
     font-size: 16px;
     font-weight: 500;
     margin: 2em 0 0;
@@ -374,7 +429,7 @@ main {
 }
 
 .productenHardloopschoenen h3 {
-    color: #FA5400;
+    color: var(--fourth-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5em;
@@ -392,7 +447,7 @@ main {
 }
 
 .productenHardloopschoenen h5 {
-    color: gray;
+    color: var(--third-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5em;
@@ -413,7 +468,7 @@ main {
 /**********/
 
 footer {
-    background-color: var(--main-color);
+    background-color: var(--footer-color);
     position: absolute;
     width: 100%;
 }
@@ -423,22 +478,19 @@ footer ul {
     padding: 0;
 }
 
-footer p {
-    color: var(--background-color);
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 2em 1em 1em;
-}
-
 footer svg {
     fill: grey;
     margin-top: 2em;
     margin-left: 1em;
 }
 
-.row {
+.socialMedia {
     display: flex;
     flex-direction: row;
+}
+
+.socialMedia p {
+    margin: 0;
 }
 
 .locatie svg {
@@ -452,11 +504,20 @@ footer svg {
 }
 
 .locatie p {
+    color: var(--background-color);
     font-size: 10px;
     margin: 0;
 }
 
 .copyright p {
-    color: grey;
+    color: var(--third-color);
     font-size: 12px;
+    margin-left: 1.5em;
+}
+
+ul.footerSnelkoppelingen li {
+    color: var(--background-color);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 2em 1em 1em;
 }
